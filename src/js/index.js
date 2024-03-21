@@ -16,7 +16,6 @@ a seleção dele
 */
 
 const botoes = document.querySelectorAll('.botao');
-
 const personagens = document.querySelectorAll(".personagem");
 
 botoes.forEach((botao, indice) => {
@@ -31,12 +30,12 @@ botoes.forEach((botao, indice) => {
   });
 });
 
-function desselecionarPersonagem() {
+const desselecionarPersonagem = () => {
   const personagemSelecionado = document.querySelector(".personagem.selecionado");
   personagemSelecionado.classList.remove("selecionado");
 }
 
-function desselecionarBotao() {
+const desselecionarBotao = () => {
   const botaoSelecionado = document.querySelector(".botao.selecionado");
   botaoSelecionado.classList.remove("selecionado");
 }
